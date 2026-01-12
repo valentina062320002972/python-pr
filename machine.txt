@@ -1,0 +1,32 @@
+macine learning
+el campo de estudio que da a las computadoras la habilidad de aprender sin enseñarlas explicitamente
+Aprendizaje supervisado
+En el aprendizaje supervisado, se nos da un conjunto de datos y ya sabemos cómo debería ser nuestra salida correcta, teniendo la idea de que existe una relación entre la entrada y la salida.
+
+Los problemas de aprendizaje supervisado se clasifican en problemas de "regresión" y "clasificación". En un problema de regresión, estamos tratando de predecir resultados dentro de una salida continua, lo que significa que estamos tratando de asignar variables de entrada a alguna función continua. En un problema de clasificación, en cambio, estamos tratando de predecir resultados en una salida discreta. En otras palabras, estamos tratando de mapear variables de entrada en categorías discretas.
+
+Ejemplo 1:
+
+Teniendo en cuenta los datos sobre el tamaño de las casas en el mercado inmobiliario, intente predecir su precio. El precio en función del tamaño es una salida continua, por lo que este es un problema de regresión.
+
+Podríamos convertir este ejemplo en un problema de clasificación al hacer nuestra salida sobre si la casa "se vende por más o menos que el precio de venta". Aquí clasificamos las casas según el precio en dos categorías discretas.
+
+Ejemplo 2 :
+
+(a) Regresión: dada una imagen de una persona, tenemos que predecir su edad sobre la base de la imagen dada
+
+(b) Clasificación: dado un paciente con un tumor, tenemos que predecir si el tumor es maligno o benigno.
+[W,s,v]=svd((repmat(sum(x.*x,1),size (x,1).*x)*x');
+Aprendizaje sin supervisión
+El aprendizaje no supervisado nos permite abordar los problemas con poca o ninguna idea de cómo deberían ser nuestros resultados. Podemos derivar la estructura de datos donde no necesariamente conocemos el efecto de las variables.
+
+Podemos derivar esta estructura agrupando los datos en función de las relaciones entre las variables en los datos.
+
+Con el aprendizaje no supervisado, no hay retroalimentación basada en los resultados de la predicción.
+
+Ejemplo:
+
+Agrupación: tome una colección de 1,000,000 de genes diferentes y encuentre una manera de agrupar automáticamente estos genes en grupos que sean de alguna manera similares o relacionados por diferentes variables, como la vida útil, la ubicación, los roles, etc.
+
+No agrupación: el "Algoritmo de cóctel" le permite encontrar estructura en un entorno caótico. (es decir, identificar voces y música individuales a partir de una malla de sonidos en un cóctel ).
+Podemos medir la precisión de nuestra función de hipótesis usando una función de costo. Esto toma una diferencia promedio (en realidad, una versión más elegante de un promedio) de todos los resultados de la hipótesis con entradas de x y la salida real y.
